@@ -3,18 +3,19 @@
 /*Variabel*/
 :root {
   /* --main-color: #e02f6b; */
-  --main-color: #1de5e2;
+  --main-color: #23A9D5;
   --blue: #0000ff;
   --blue-dark: #18293c;
   --orange: #ffa500;
-  --green-yellow: #cddc39;
+  --green-yellow: #ffffff;
   /* --pink-light: #efa2b4; */
-  --pink-light: #b0e1fa;
+  --pink-light: #ffffff;
   /* --cyan-light: #aef1ee; */
-  --cyan-light: #fbf0ea;
+  --cyan-light: #ffffff;
   --white: #ffffff;
-  --white-alpha-40: rgba(255, 255, 255, 0.4);
-  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --white-alpha-40: rgba(150, 150, 150, 0.2);
+  --white-alpha-25: rgba(246, 245, 245, 0.25);
+  --white-alpha-80: rgba(255, 255, 255, 0.8);
   --backdrop-filter-blur: blur(5px);
 }
 
@@ -161,16 +162,34 @@ button {
   font-family: inherit;
   user-select: none;
 }
+.cta-btn {
+  line-height: 1.5;
+  background-color: var(--main-color);
+  border: 1px solid var(--white-alpha-40);
+  padding: 10px 28px;
+  display: inline-block;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  /* text-transform: capitalize; */
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
 .btn {
   line-height: 1.5;
   background-color: var(--white-alpha-25);
   border: 1px solid var(--white-alpha-40);
   padding: 10px 28px;
   display: inline-block;
-  border-radius: 30px;
+  border-radius: 10px;
   color: var(--main-color);
   font-weight: 500;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-family: inherit;
   font-size: 16px;
   cursor: pointer;
@@ -615,7 +634,7 @@ nav ul li a:hover {
 
 .home-section {
   /* display: flex; */
-  padding: 120px 0px;
+  padding: 90px 0px;
 }
 .home-section.active {
   display: flex;
@@ -634,11 +653,11 @@ nav ul li a:hover {
 }
 .home-text h1 {
   font-size: 50px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .home-text h2 {
   font-size: 20px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: 300;
   margin: 0 0 30px;
 }
@@ -647,11 +666,15 @@ nav ul li a:hover {
   margin: 0 15px 0 15px;
 }
 
+.home-text .cta-btn {
+  margin: 0 15px 0 15px;
+}
+
 .home-img .img-box {
-  max-width: 360px;
-  background-color: var(--white-alpha-25);
+  max-width: 380px;
+  background-color: var(--white-alpha-80);
   border-radius: 50%;
-  border: 8px solid var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
   margin: auto;
 }
 .home-img .img-box img {
@@ -943,7 +966,7 @@ nav ul li a:hover {
 .contact-info-item {
   /* background-color: red; */
   margin: 0 0 30px;
-  padding: 0 0 0 20px;
+  /* padding: 0 0 0 20px; */
 }
 .contact-info-item h3 {
   /* background-color: green; */
@@ -991,6 +1014,9 @@ nav ul li a:hover {
     text-align: center;
   }
   .home-text .btn {
+    margin: 0 7px 15px;
+  }
+  .home-text .cta-btn {
     margin: 0 7px 15px;
   }
   .portfolio-item {
